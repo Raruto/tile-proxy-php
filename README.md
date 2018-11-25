@@ -101,7 +101,7 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
     <script>
       var map = L.map('map').setView([0, 0], 0);
 
-      var proxy_url = 'http://example.com/tiles/{id}/{z}/{x}/{y}.png'; // NB: CHANGE: "http://example.com/tiles" to fit your own needs
+      var proxy_url = 'http://example.com/tiles/{id}/{z}/{x}/{y}.png'; // CHANGE: "http://example.com/tiles" to fit your own needs
       var tms_id = 'otm';
 
       var tileLayer = L.tileLayer(proxy_url, {
