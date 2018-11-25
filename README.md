@@ -25,6 +25,7 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
 ## How to use
 
 1. **edit the default "config.php"**
+
     ```php
     /**
      * Whitelist of supported tile servers
