@@ -1,0 +1,10 @@
+<FilesMatch "config\.php">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+RewriteEngine On
+#RewriteBase /
+
+# {r}/{z}/{x}/{y}.png --> index.php?r={r}&z={z}&x={x}&y={y}
+RewriteRule ^([^\/]+)/([0-9]+)/([0-9]+)/([0-9]+).png$ index.php?r=$1&z=$2&x=$3&y=$4 [L]
