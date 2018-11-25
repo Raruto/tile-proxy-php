@@ -33,7 +33,7 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
      *
      * @var array
      */
-    $tiles_config['servers'] = array(
+    $config['servers'] = array(
       'osm'  => 'https://{switch:a,b,c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       'otm'  => 'https://{switch:a,b,c}.tile.opentopomap.org/{z}/{x}/{y}.png',
       // ADD: more services here.
@@ -52,7 +52,7 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
      * @var string
      */
     // CHANGE: bounding box cache-area to fit your own needs
-    $tiles_config['bbox'] = '6.602696,35.07638,19.12499,47.10169'; // CHANGE: bbox tiles (Italy) are cached, others are proxied!
+    $config['bbox'] = '6.602696,35.07638,19.12499,47.10169'; // CHANGE: bbox tiles (Italy) are cached, others are proxied!
 
     /**
      * Cache timeout in seconds
@@ -63,14 +63,14 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
      *
      * @var int
      */
-    $tiles_config['ttl'] = 86400;
+    $config['ttl'] = 86400;
 
     /**
      * Custom Proxy Server headers
      *
      * @var string
      */
-    $tiles_config['headers'] = array(
+    $config['headers'] = array(
       'Access-Control-Allow-Origin:' => '*',
     );
     ```
