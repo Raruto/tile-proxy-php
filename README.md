@@ -11,7 +11,7 @@ This software should make it simple to use pre-rendered map tiles in your own pr
 
 Download project files and upload it into your web hosting of your choice.
 
-Open the "proxy-test.html" within your browser, server should display you a simple slippy maps rendering default Open Street Map tiles.
+Open the **"proxy-test.html"** within your browser, your proxy server should display you a simple slippy maps rendering default Open Street Map tiles.
 Or test directly  in your browser with a tile URL such as: http://www.example.com/tiles/15/17024/10792.png 
 
 **NB.** Remeber to check your web server folder permissions: **777** or **755**
