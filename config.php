@@ -11,11 +11,14 @@
 /**
  * Whitelist of supported tile servers
  *
+ * @link https://wiki.openstreetmap.org/wiki/Tile_servers
+ *
  * @var array
  */
-$tiles_config['servers'] = array(
-	'osm'  => 'https://{switch:a,b,c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
-	'otm'  => 'https://{switch:a,b,c}.tile.opentopomap.org/{z}/{x}/{y}.png',
+$config['servers'] = array(
+	'osm' => 'https://{switch:a,b,c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+	'otm' => 'https://{switch:a,b,c}.tile.opentopomap.org/{z}/{x}/{y}.png',
+	// ADD: more services here.
 );
 
 /**
@@ -30,7 +33,7 @@ $tiles_config['servers'] = array(
  *
  * @var string
  */
-$tiles_config['bbox'] = '6.602696,35.07638,19.12499,47.10169'; // Italy.
+$config['bbox'] = '6.602696,35.07638,19.12499,47.10169'; // CHANGE: bbox tiles (Italy) are cached, others are proxied!
 
 /**
  * Cache timeout in seconds
@@ -41,13 +44,13 @@ $tiles_config['bbox'] = '6.602696,35.07638,19.12499,47.10169'; // Italy.
  *
  * @var int
  */
-$tiles_config['ttl'] = 86400;
+$config['ttl'] = 86400;
 
 /**
  * Custom Proxy Server headers
  *
  * @var string
  */
-$tiles_config['headers'] = array(
+$config['headers'] = array(
 	'Access-Control-Allow-Origin:' => '*',
 );

@@ -15,18 +15,20 @@
  * @license   https://www.gnu.org/licenses/gpl-3.0.txt GNU/GPLv3
  */
 
+// TODO: code refactoring ( wrap it within a dedicated class.. )
+
 // User configs.
 require_once 'config.php';
 
 // Default configs.
-$servers = @$tiles_config['servers'] ?: array(
+$servers = @$config['servers'] ?: array(
 	'osm' => 'https://{switch:a,b,c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 	'otm' => 'https://{switch:a,b,c}.tile.opentopomap.org/{z}/{x}/{y}.png',
 );
-$bbox    = @$tiles_config['bbox'] ?: '-180,-90,180,90';
-$ttl     = @$tiles_config['ttl'] ?: 86400;
+$bbox    = @$config['bbox'] ?: '-180,-90,180,90';
+$ttl     = @$config['ttl'] ?: 86400;
 $headers = array_change_key_case(
-	@$tiles_config['headers'] ?: array(
+	@$config['headers'] ?: array(
 		'Access-Control-Allow-Origin:' => '*',
 	), CASE_LOWER
 );

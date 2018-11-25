@@ -11,8 +11,8 @@ This software should make it simple to use pre-rendered map tiles in your own pr
 
 Download project files and upload it into your web hosting of your choice.
 
-Open the **"proxy-test.html"** within your browser, your proxy server should display you a simple slippy maps rendering default Open Street Map tiles.
-Or test directly  in your browser with a tile URL such as: http://www.example.com/tiles/15/17024/10792.png 
+Open the **"test.html"** file within your browser, your proxy server should display you a simple slippy maps rendering default Open Street Map tiles.
+Or test directly  in your browser with a tile URL such as: http://www.example.com/tiles/15/17024/10792.png
 
 **NB.** Remeber to check your web server folder permissions: **777** or **755**
 
@@ -36,7 +36,7 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
     $tiles_config['servers'] = array(
       'osm'  => 'https://{switch:a,b,c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       'otm'  => 'https://{switch:a,b,c}.tile.opentopomap.org/{z}/{x}/{y}.png',
-      // ADD: more services here
+      // ADD: more services here.
     );
 
     /**
@@ -52,7 +52,7 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
      * @var string
      */
     // CHANGE: bounding box cache-area to fit your own needs
-    $tiles_config['bbox'] = '6.602696,35.07638,19.12499,47.10169'; // Italy tiles are cached, others are proxied!
+    $tiles_config['bbox'] = '6.602696,35.07638,19.12499,47.10169'; // CHANGE: bbox tiles (Italy) are cached, others are proxied!
 
     /**
      * Cache timeout in seconds
@@ -76,7 +76,7 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
     ```
 
 2. **create your first simple “tile-proxy-php” slippy map**
-    
+
     a. **_include CSS & JavaScript_**
     ```html
     <head>
@@ -87,7 +87,7 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
     ...
     </head>
     ```
-    
+
     a. **_choose the div container used for the slippy map_**
     ```html
     <body>
@@ -105,9 +105,9 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
       var tms_id = 'otm';
 
       var tileLayer = L.tileLayer(proxy_url, {
-        attribution: 'map data: &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' + 
-          '<a href="http://viewfinderpanoramas.org">SRTM</a> | ' + 
-          'map style: © <a href="https://opentopomap.org">OpenTopoMap</a> ' + 
+        attribution: 'map data: &copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+          '<a href="http://viewfinderpanoramas.org">SRTM</a> | ' +
+          'map style: © <a href="https://opentopomap.org">OpenTopoMap</a> ' +
           '(<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>), ',
         id: tms_id
       });
