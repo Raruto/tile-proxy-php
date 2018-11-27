@@ -11,6 +11,10 @@ This software should make it simple to use pre-rendered map tiles in your own pr
 
 Download project files and upload it into your web hosting of your choice.
 
+<p align="center">
+    <a href="https://raruto.github.io" rel="nofollow"><img src="https://raruto.github.io/img/proxy-caching.jpg" alt="Proxy Caching" /></a>
+</p>
+
 Open the **"test.html"** file within your browser, the proxy server should display you a simple slippy map rendering the default Open Street Map tiles.
 Or test directly  in your browser with a tile URL such as: http://www.example.com/tiles/15/17024/10792.png
 
