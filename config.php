@@ -9,6 +9,13 @@
  */
 
 /**
+ * Public App name.
+ *
+ * @var string
+ */
+$config['user_agent'] = 'Tile-Proxy-PHP/0.1';
+
+/**
  * Whitelist of supported tile servers
  *
  * @link https://wiki.openstreetmap.org/wiki/Tile_servers

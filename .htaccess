@@ -1,5 +1,5 @@
-<FilesMatch "config\.php">
-  Order allow,deny
+<FilesMatch "^(?!index\.php$).+\.php$">
+  Order deny,allow
   Deny from all
 </FilesMatch>
 
