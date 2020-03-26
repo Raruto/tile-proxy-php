@@ -21,7 +21,7 @@ require_once 'config.php';
 require_once 'functions.php';
 
 // Default configs.
-$user_agent = @$config['user_agent'] ?: '';
+$user_agent = @$config['user_agent'] ?: 'Tile-Proxy-PHP/0.1';
 $servers    = @$config['servers'] ?: array(
 	'osm' => 'https://{switch:a,b,c}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 	'otm' => 'https://{switch:a,b,c}.tile.opentopomap.org/{z}/{x}/{y}.png',
