@@ -32,6 +32,13 @@ Or test directly  in your browser with a tile URL such as: http://www.example.co
 
     ```php
     /**
+     * Public App name.
+     *
+     * @var string
+     */
+    $config['user_agent'] = 'Tile-Proxy-PHP/0.1';
+
+    /**
      * Whitelist of supported tile servers
      *
      * @link https://wiki.openstreetmap.org/wiki/Tile_servers
